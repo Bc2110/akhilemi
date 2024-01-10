@@ -1,8 +1,8 @@
-/* Minimalistic styles with background color */
+/* Enhanced and Elaborate styles for EMI Calculator */
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ecf0f1;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -11,11 +11,13 @@ body {
   }
   
   .emi-calculator {
-    width: 300px;
-    padding: 20px;
+    width: 500px; /* Increased width */
+    margin: 20px;
+    padding: 30px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   h2 {
@@ -28,21 +30,25 @@ body {
   }
   
   .input-field {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .input-field label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #333;
   }
   
   .input-field input {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
+    width: calc(100% - 22px);
+    padding: 12px; /* Increased padding */
+    font-size: 16px;
     border: 1px solid #3498db;
-    border-radius: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+    float: left;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
   }
   
   .input-field input:focus {
@@ -51,16 +57,26 @@ body {
     box-shadow: 0 0 5px #3498db;
   }
   
+  .input-field input::placeholder {
+    color: #aaa;
+  }
+  
+  .input-field:last-child {
+    margin-bottom: 30px;
+  }
+  
   button {
     display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    width: calc(100% + 4px); /* Increased width */
+    margin-top: 90px; /* Added margin-top */
+    padding: 15px;
+    font-size: 18px;
     background-color: #3498db;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
   button:hover {
@@ -69,9 +85,16 @@ body {
   
   p {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
     color: #2ecc71;
     text-align: center;
     margin-bottom: 0;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
   }
   
